@@ -28,6 +28,8 @@ public class StudentService {
         studentRepository.deleteById(id);
     }
 
-
+    public void deleteAllStudent(){
+        studentRepository.deleteAll();
+    }
 
 }
