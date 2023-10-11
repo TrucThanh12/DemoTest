@@ -30,4 +30,8 @@ public class PersonService {
     public void deletePerson(String id){
         personRepository.deleteById(id);
     }
+
+    public void deleteAllPerson(){
+        personRepository.deleteAll();
+    }
 }
