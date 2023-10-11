@@ -32,4 +32,8 @@ public class BookController {
     public void deleteBook(@PathVariable String id){
         bookService.deleteBook(id);
     }
+    @PutMapping("/{id}")
+    public void updateBook(@PathVariable String id, @RequestBody Book updatedBook) {
+        bookService.updateBook(id, updatedBook);
+    }
 }
