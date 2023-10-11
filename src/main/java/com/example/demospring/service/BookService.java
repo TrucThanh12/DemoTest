@@ -27,6 +27,17 @@ public class BookService {
     public void deleteBook(String id){
         bookRepository.deleteById(id);
     }
+    public void updateBook(String id, Book updatedBook) {
+        Book existingBook = bookRepository.findById(id).orElse(null);
+
+        if (existingBook != null) {
+            existingBook.setName(updatedBook.getName());
+            existingBook.setPrice(updatedBook.getPrice());
+
+            bookRepository.save(existingBook);
+        }
+    }
+
 
     public void deleteAllBook(){
         bookRepository.deleteAll();
