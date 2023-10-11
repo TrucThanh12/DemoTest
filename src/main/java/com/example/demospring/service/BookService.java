@@ -39,4 +39,8 @@ public class BookService {
     }
 
 
+    public void deleteAllBook(){
+        bookRepository.deleteAll();
+    }
+
 }

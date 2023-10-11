@@ -32,5 +32,9 @@ public class StudentController {
         studentService.deleteStudent(id);
     }
 
+    @DeleteMapping("/deleteAllStudent")
+    public void deleteAllStudent(){
+        studentService.deleteAllStudent();
+    }
 
 }
