@@ -32,20 +32,17 @@ public class BookController {
     public void deleteBook(@PathVariable String id){
         bookService.deleteBook(id);
     }
-//<<<<<<< HEAD
     @PutMapping("/{id}")
     public void updateBook(@PathVariable String id, @RequestBody Book updatedBook) {
         bookService.updateBook(id, updatedBook);
     }
-//=======
 
     @DeleteMapping("/deleteAllBook")
     public void deleteAllBook(){
         bookService.deleteAllBook();
     }
-    //>>>>>>> e9aaa14ddfbc1ec5eaaae8da62d6ef5eb32ddbdb
-    }
 
     public void getBookByAuthor(){
-    
+        
+    }
     }
