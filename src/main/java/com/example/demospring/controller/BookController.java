@@ -37,6 +37,10 @@ public class BookController {
         bookService.updateBook(id, updatedBook);
     }
 
+    public void getBookByTitle(){
+        
+    }
+
     @DeleteMapping("/deleteAllBook")
     public void deleteAllBook(){
         bookService.deleteAllBook();
